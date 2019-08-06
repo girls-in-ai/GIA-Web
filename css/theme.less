@@ -1,0 +1,53 @@
+@bd-color: #333;
+
+body {
+  // background: @bd-color;
+}
+/* 更改bootstrap样式风格 */
+.navbar {
+    height: 7vh;
+    min-height: 64px;
+    line-height: 7vh;
+    margin-bottom: 0;
+    padding: 6px 0;
+    border-radius: 0;
+}
+
+.navbar-inverse {
+    background: @bd-color;
+    border-color: @bd-color;
+}
+
+.carousel-control.right, .carousel-control.left  {
+    background-image: none; 
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  z-index: 99;
+  position: relative;
+}
+
+.navbar-collapse {
+  box-shadow: none;
+  border-top: none;
+}
+
+.navbar-nav {
+  z-index: 99;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+  background: @bd-color;
+}
+
+// .navbar-inverse .navbar-nav>li>a {
+//   color: @bd-color;
+// }
+
+// .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+//   color: @bd-color;
+// }
+
+.swiper-pagination-bullet-active {
+  background: @bd-color;
+}

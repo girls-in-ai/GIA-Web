@@ -1,0 +1,180 @@
+/* 超小屏幕（手机，小于 768px） */
+/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+* {
+  font-size: 14px;
+}
+.marginTop10 {
+  margin-top: 10px;
+}
+.marginTop20 {
+  margin-top: 20px;
+}
+/*index页面css*/
+#index-page .main-part {
+  width: 90%;
+  margin: 24px auto;
+}
+#index-page .main-part .title-part {
+  display: flex;
+  justify-content: center;
+}
+#index-page .main-part .title-part span {
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: bold;
+}
+#index-page .main-part .title-part .title {
+  font-size: 16px;
+  color: #fff;
+  background: rgba(51, 51, 51, 0.8);
+  border-radius: 2px;
+  letter-spacing: 6px;
+}
+#index-page .main-part .contributor-part {
+  height: 160px;
+  overflow: hidden;
+}
+#index-page .main-part .contributor-part span {
+  margin-right: 10px;
+}
+#index-page .main-part .introduce-part {
+  width: 100%;
+  display: flex;
+  padding-top: 24px;
+}
+#index-page .main-part .introduce-part .ip-left {
+  margin-bottom: 24px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#index-page .main-part .introduce-part .ip-left img {
+  width: 320px;
+}
+#index-page .main-part .introduce-part .content {
+  width: 100%;
+  margin: 12px auto;
+}
+#index-page .main-part .introduce-part .content p {
+  text-indent: 28px;
+  line-height: 24px;
+}
+#index-page .main-part .gain-part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+#index-page .main-part .gain-part .data-item {
+  flex: 1;
+  padding: 24px;
+  border-radius: 4px;
+  text-align: center;
+}
+#index-page .main-part .gain-part .data-item p {
+  line-height: 34px;
+}
+#index-page .main-part .gain-part .data-item span {
+  display: inline-block;
+  font-size: 90px;
+}
+#index-page .main-part .gain-part .data-item span small {
+  font-size: 30px;
+  font-weight: bold;
+}
+.nav-list {
+  visibility: hidden;
+  z-index: 99;
+}
+.slider-part .slider-item {
+  position: relative;
+}
+.slider-part .slider-item .top-content {
+  position: absolute;
+  z-index: 2;
+  top: 10vh;
+  left: 10vh;
+  color: #fff;
+}
+.slider-part .slider-item .top-content h3 {
+  font-size: 8rem;
+}
+.slider-part .slider-item .top-content p {
+  font-size: 4rem;
+}
+footer {
+  height: 42px;
+  line-height: 42px;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+footer span {
+  display: inline-block;
+  font-size: 13px;
+  margin-right: 10px;
+}
+footer a {
+  color: #fff;
+  font-size: 13px;
+}
+footer a:hover {
+  color: #fff;
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (max-width: 768px) {
+  .navbar {
+    border-radius: 0px;
+  }
+  .carousel-caption {
+    display: none;
+  }
+  .introduce-part {
+    width: 100%;
+    flex-direction: column;
+  }
+  .introduce-part .ip-left,
+  .introduce-part .ip-right {
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 0;
+  }
+  .introduce-part .ip-left img,
+  .introduce-part .ip-right img {
+    width: 100%;
+  }
+  .gain-part {
+    flex-direction: column;
+  }
+  .slider-part .slider-item {
+    position: relative;
+  }
+  .slider-part .slider-item .top-content {
+    position: absolute;
+    z-index: 2;
+    top: 7vh;
+    left: 7vh;
+    color: #fff;
+  }
+  .slider-part .slider-item .top-content h3 {
+    font-size: 4rem;
+  }
+  .slider-part .slider-item .top-content p {
+    font-size: 2rem;
+  }
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (max-width: 992px) and (min-width: 769px) {
+  .main-part {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+  .main-part {
+    width: 960px;
+    margin: 0 auto;
+  }
+}

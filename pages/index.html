@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Girls in AI</title>
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/index.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css" rel="stylesheet" >
+    <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <style>
+    @font-face {
+        font-family: 'Glyphicons Halflings';
+        src: url('../font/glyphicons-halflings-regular.eot');
+        src: url('../font/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../font/glyphicons-halflings-regular.woff') format('woff'), url('../font/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+  </style>
+  <body>
+    <header>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button onclick="toggleNavbar()" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">GIA-LOGO</a>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">创始人的话</a></li>
+                <li><a href="#">数据展示</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我们的课程 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">小白python入门教程</a></li>
+                    <li><a href="#">数据分析教程</a></li>
+                    <li><a href="#">机器学习教程</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <!-- <div style="height:400px;"></div> -->
+    <div id="index-page">
+      <section>
+        <div class="slider-part " style="z-index:1">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <!-- <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> -->
+                <!-- <li data-target="#carousel-example-generic" data-slide-to="1"></li> -->
+                <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active slider-item">
+                  <img src="../images/bg-1.png" alt="">
+                  <div class="top-content">
+                    <h3>GirlsInAI</h3>
+                    <p>coding is the new sexy</p>
+                  </div>
+                  <div class="carousel-caption">
+                    <!-- <h3>关于GIA</h3> -->
+                    <p>GirlsInAI（GIA） 是一个面向编程 零基础 的AI算法工程师养成计划。鼓励更多的女孩子去学习编程甚至成为科技行业的领袖。希望大家都能站在食物链上游看一看，因为风景真的很好。</p>
+                  </div>
+                </div>
+                <!-- <div class="item slider-item">
+                  <img src="../images/bg-2.png" alt="">
+                  <div class="carousel-caption">
+                    <p>鼓励更多的女孩子去学习编程甚至成为科技行业领袖。</p>
+                  </div>
+                </div>
+                <div class="item slider-item">
+                    <img src="../images/bg-3.png" alt="">
+                    <div class="carousel-caption">
+                      <p>小白python入门教程，数据分析教程，机器学习教程。</p>
+                    </div>
+                </div> -->
+              </div>
+            
+              <!-- Controls -->
+              <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a> -->
+          </div>          
+        </div>
+        <div class="main-part">
+          <div class="contributor-part marginTop20">
+              <div class="title-part">
+                <!-- <span class="title">我们的贡献者</span> -->
+                <span>AI is shaping the future. Who is shaping AI? </span>
+              </div>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <span>小A</span>
+                      <span>提出方案，筹建整个项目</span>
+                    </div>
+                    <div class="swiper-slide">
+                      <span>小B</span>
+                      <span>送上一支火箭</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>小C</span>
+                        <span>感谢送的火箭</span>
+                    </div>
+                </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+              </div>
+          </div>
+          <div class="introduce-part marginTop20">
+            <section class="ip-left">
+              <img src="../images/temp-left.png"/>
+            </section>
+            <section class="ip-right">
+              <div class="title-part">
+                <!-- <span class="title">介绍</span> -->
+                <span>这个计划为什么叫Girls-In-AI? </span>
+              </div>
+              <div class="content">
+                <p>社会有强弱，技术无性别。GIA鼓励更多的女孩子们加入到科技行业，从事社会地位高的有意思的工作。所以GIA奖学金就是面向女生的。最少的是我投入的500rmb，已经在微博上募捐到1000rmb。如果受到支持，会加大奖学金额，上不封顶。同时，欢迎任何对这个项目的赞助与支持。
+                </p>
+                <p>另外，这个计划所有的课程都免费。对！免费！而且我们还有奖学金放送！如果你没钱报外面三五万的水培训班，而你恰好有时间学，欢迎你来！
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="gain-part marginTop20">
+            <div class="data-item">
+              <p>全球2300万开发者中<br/>女性程序员的比例只占到</p>
+              <span>20<small>%</small></span>
+            </div>
+            <div class="data-item">
+                <p>全球高校的人工智能、机器学习等课程中<br/>性学员的比例只占到</p>
+                <span>25<small>%</small></span>
+            </div>
+            <div class="data-item">
+                <p>目前GirlsInAI计划的<br/>学习参与者人数已高于</p>
+                <span>4.7<small>k</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <span>© 2019 by GIA</span>
+        <a href="https://m.weibo.cn/profile/2650740963">微博</a>&nbsp;&nbsp;|&nbsp;
+        <a href="https://github.com/YZHANG1270/Girls-In-AI">Git</a>
+      </footer>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      autoplay: true,
+      speed: 300,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    </script>
+  </body>
+</html>
