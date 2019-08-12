@@ -14,15 +14,16 @@
 }
 
 .marginTop20 {
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 
 /*index页面css*/
 #index-page {
   .main-part {
-    width: 90%;
-    margin: 24px auto;
+    // width: 90%;
+    // width:100%;
+    // margin: 24px auto;
     .title-part {
       display: flex;
       justify-content: center;
@@ -40,7 +41,8 @@
       }
     }
     .contributor-part {
-      height: 160px;
+      // height: 160px;
+      padding: 60px 24px;
       overflow: hidden;
       span {
         margin-right: 10px;
@@ -49,7 +51,8 @@
     .introduce-part {
       width: 100%;
       display: flex;
-      padding-top: 24px;
+      padding: 60px 24px;
+      background: rgba(232, 186, 188, 0.6);
       .ip-left {
         // width: 40%;
         margin-bottom: 24px;
@@ -77,20 +80,23 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding-bottom: 24px;
+      padding: 80px 120px;
+      background: rgba(232, 186, 188, 0.6);
       .data-item {
         // background: #333;
         // color: #fff;
-        flex: 1;
+        width: 250px;
+        // flex: 1;
         padding: 24px;
         border-radius: 4px;
         text-align: center;
         p {
           line-height: 34px;
+          font-size: 18px;
         }
         span {
           display: inline-block;
-          font-size: 90px;
+          font-size: 100px;
           small {
             font-size: 30px;
             font-weight: bold;
@@ -98,6 +104,61 @@
         }
       }
       .data-item:hover {}
+    }
+    .course-part {
+      width:100%;
+      padding: 60px 24px;
+      h3 {
+        text-align: center;
+      }
+      .course-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width:100%;
+        .course-item {
+          width: 30%;
+          height: 360px;
+          border-radius: 6px;
+          background: #fff;
+          box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+          margin: 12px;
+          overflow: hidden;
+          .title {
+            width: 100%;
+            height: 140px;
+            padding: 24px;
+            background:#333;
+            h4 {
+              color: #fff;
+              font-size: 26px;
+            }
+          }
+          p {
+            height: 120px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+          }
+          .enter-wrap {
+            // padding: 24px;
+            text-align: center;
+            span {
+              display: inline-block;
+              height: 44px;
+              line-height: 44px;
+              width: 140px;
+              margin: 0 auto;
+              border-radius: 4px;
+              background: rgba(232, 186, 188,1);
+              text-align: center;
+              color: #fff;
+              font-size: 16px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -114,7 +175,7 @@
       position: absolute;
       z-index: 2;
       top: 10vh;
-      left: 10vh;
+      left: 26vh;
       color: #fff;
       h3 {
         font-size: 8rem;
@@ -148,6 +209,9 @@ footer {
 
 /* 小屏幕（平板，大于等于 768px） */
 @media (max-width: @screen-sm-min) { 
+  .content-detail {
+    display: none;
+  }
   .navbar {
     border-radius: 0px;
   }
@@ -201,8 +265,17 @@ footer {
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
 @media (min-width: @screen-lg-min) { 
   .main-part {
-    width: 960px;
-    margin: 0 auto;
+    // width: 960px;
+    // margin: 0 auto;
+    padding: 60px;
   }
-
+  .introduce-part {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    .ip-right {
+      width:30%;
+      margin-left:8vw;
+    }
+  }
 }

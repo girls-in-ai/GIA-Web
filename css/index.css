@@ -7,13 +7,9 @@
   margin-top: 10px;
 }
 .marginTop20 {
-  margin-top: 20px;
+  margin-top: 100px;
 }
 /*index页面css*/
-#index-page .main-part {
-  width: 90%;
-  margin: 24px auto;
-}
 #index-page .main-part .title-part {
   display: flex;
   justify-content: center;
@@ -31,7 +27,7 @@
   letter-spacing: 6px;
 }
 #index-page .main-part .contributor-part {
-  height: 160px;
+  padding: 60px 24px;
   overflow: hidden;
 }
 #index-page .main-part .contributor-part span {
@@ -40,7 +36,8 @@
 #index-page .main-part .introduce-part {
   width: 100%;
   display: flex;
-  padding-top: 24px;
+  padding: 60px 24px;
+  background: rgba(232, 186, 188, 0.6);
 }
 #index-page .main-part .introduce-part .ip-left {
   margin-bottom: 24px;
@@ -64,24 +61,80 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 24px;
+  padding: 80px 120px;
+  background: rgba(232, 186, 188, 0.6);
 }
 #index-page .main-part .gain-part .data-item {
-  flex: 1;
+  width: 250px;
   padding: 24px;
   border-radius: 4px;
   text-align: center;
 }
 #index-page .main-part .gain-part .data-item p {
   line-height: 34px;
+  font-size: 18px;
 }
 #index-page .main-part .gain-part .data-item span {
   display: inline-block;
-  font-size: 90px;
+  font-size: 100px;
 }
 #index-page .main-part .gain-part .data-item span small {
   font-size: 30px;
   font-weight: bold;
+}
+#index-page .main-part .course-part {
+  width: 100%;
+  padding: 60px 24px;
+}
+#index-page .main-part .course-part h3 {
+  text-align: center;
+}
+#index-page .main-part .course-part .course-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+#index-page .main-part .course-part .course-wrap .course-item {
+  width: 30%;
+  height: 360px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  margin: 12px;
+  overflow: hidden;
+}
+#index-page .main-part .course-part .course-wrap .course-item .title {
+  width: 100%;
+  height: 140px;
+  padding: 24px;
+  background: #333;
+}
+#index-page .main-part .course-part .course-wrap .course-item .title h4 {
+  color: #fff;
+  font-size: 26px;
+}
+#index-page .main-part .course-part .course-wrap .course-item p {
+  height: 120px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
+#index-page .main-part .course-part .course-wrap .course-item .enter-wrap {
+  text-align: center;
+}
+#index-page .main-part .course-part .course-wrap .course-item .enter-wrap span {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  width: 140px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: #e8babc;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
 }
 .nav-list {
   visibility: hidden;
@@ -94,7 +147,7 @@
   position: absolute;
   z-index: 2;
   top: 10vh;
-  left: 10vh;
+  left: 26vh;
   color: #fff;
 }
 .slider-part .slider-item .top-content h3 {
@@ -124,6 +177,9 @@ footer a:hover {
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (max-width: 768px) {
+  .content-detail {
+    display: none;
+  }
   .navbar {
     border-radius: 0px;
   }
@@ -174,7 +230,15 @@ footer a:hover {
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
 @media (min-width: 1200px) {
   .main-part {
-    width: 960px;
-    margin: 0 auto;
+    padding: 60px;
+  }
+  .introduce-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .introduce-part .ip-right {
+    width: 30%;
+    margin-left: 8vw;
   }
 }
