@@ -41,18 +41,19 @@ body {
   background: @bd-color;
 }
 
-// .navbar-inverse .navbar-nav>li>a {
-//   color: @color-white;
-// }
-
-// .navbar-inverse .navbar-brand {
-//   color: @color-white;
-// }
-
-// .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-//   color: @bd-color;
-// }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background: @bd-color;
+}
 
 .swiper-pagination-bullet-active {
   background: @bd-color;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+  z-index: 999;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  background: #333;
+  color: #fff;
 }

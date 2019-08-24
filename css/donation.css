@@ -1,0 +1,35 @@
+#donation-page .part-one,
+#donation-page .part-two {
+  width: 50%;
+  min-width: 400px;
+  margin: 80px auto;
+  border: 1px solid #DADFE2;
+  background: #f2f2f2;
+  border-radius: 5px;
+  padding: 30px;
+}
+#donation-page .part-one header,
+#donation-page .part-two header {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+#donation-page .part-one header div,
+#donation-page .part-two header div {
+  font-size: 20px;
+}
+#donation-page .part-one img,
+#donation-page .part-two img {
+  width: 120px;
+  height: 120px;
+}
+#donation-page .part-one .content,
+#donation-page .part-two .content {
+  display: flex;
+  flex-direction: row;
+}
+#donation-page .part-one .content .info,
+#donation-page .part-two .content .info {
+  display: flex;
+  align-items: center;
+}

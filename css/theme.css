@@ -32,6 +32,19 @@
 .navbar-inverse .navbar-nav > .open > a:hover {
   background: #333;
 }
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: #333;
+}
 .swiper-pagination-bullet-active {
   background: #333;
+}
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
+  z-index: 999;
+}
+.navbar-inverse .navbar-nav > li > a {
+  background: #333;
+  color: #fff;
 }

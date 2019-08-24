@@ -2,175 +2,221 @@
 <html lang="en">
 	<head>
 		<title>Girls in AI</title>
-	    <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-	</head>
-	<body>
-    <!-- Start Header -->
-    <div class="wrapper row1" id="navi">
-        <header id="header" class="hoc clear" > 
-          <div id="logo" class="fl_left" >
-            <img src = "images/demo/templogo.png">
-          </div>
-          <!-- Navigater starts here -->
-          <nav id="mainav" class="fl_right" >
-            <ul class="clear">
-              <li ><a href="#about">关于我们</a></li>
-              <li ><a href="#founder">创始人的话</a></li>
-              <li><a class="drop" href="#">课程介绍</a>
-                <ul>
-                  <li><a href="#">小白python入门</a></li>
-                  <li><a href="#">成为数据分析师 data analyst</a></li>
-                  <li><a href="#">机器学习</a></li>
-                </ul>
-              </li>
-              <li ><a href="#">贡献者数据</a></li>
-              <li ><a href="#">And More</a></li>
-          </ul>
-          </nav>
-          <!-- Navigater ends here -->
-        </header>
-        <!-- Header ends here -->
-    </div>
-    <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');" id="about"> 
-      
-        <!-- Aidbout us starts-->
-        <div id="pageintro" class="hoc clear">
-            <article> 
-              <h3 class="heading">关于GIA</h3>
-              <p class="font-x1 bold">GirlsInAI是一个面向编程零基础的女孩子的AI算法工程师养成计划。这个计划鼓励更多的女孩子去学习编程甚至成为科技行业领袖。GIA可以为大家带来：小白python入门教程，数据分析教程，机器学习教程。今后还会有更多的教程和活动。目前我们已经有4600多个GIAers，在GitHub的项目也有1.1k stars⭐</p>
-            </article>
-        </div>
-    </div>
-    <div class="wrapper row3">
-      <main class="hoc container clear"> 
-        <!-- main body -->
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css" rel="stylesheet" >
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <style>
+    @font-face {
+        font-family: 'Glyphicons Halflings';
+        src: url('font/glyphicons-halflings-regular.eot');
+        src: url('font/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('font/glyphicons-halflings-regular.woff') format('woff'), url('font/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <header>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">GIA-LOGO</a>
+            </div>
         
-        <div class="group" >
-          <div class="two_third first" id="founder">
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="./pages/courses.html">课程</a></li>
+                <li><a href="./pages/giaers.html">她们</a></li>
+                <li><a href="./pages/about.html">关于</a></li>
+                <!-- <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我们的课程 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">小白python入门教程</a></li>
+                    <li><a href="#">数据分析教程</a></li>
+                    <li><a href="#">机器学习教程</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <div id="index-page">
+      <section>
+        <div class="slider-part " style="z-index:1">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <!-- <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> -->
+                <!-- <li data-target="#carousel-example-generic" data-slide-to="1"></li> -->
+                <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+              </ol>
             
-            <h3>“Coding is the new sexy。"</h3>
-            <h3> "我的出发点很简单，我只想做好一件事，聚焦。我的点很小，鼓励更多的女生去学习AI编程甚至成为科技行业的领袖。希望大家都能站在食物链上游看一看，因为风景真的很好。"</h3>
-            <p class="btmspace-30" align="right">Message from founder ZhangYi</p>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active slider-item">
+                  <img src="images/bg-1.png" alt="">
+                  <div class="top-content">
+                    <h3>Girls<span style="color:rgba(232, 186, 188, 1);font-size: 80px;">In</span>AI</h3>
+                    <!--<p>coding is the new sexy</p>-->
+                    <p class="content-detail" style="font-size:20px;max-width:480px;margin-top:24px;line-height: 40px;">GirlsInAI（GIA） 是一个面向编程小白的AI算法工程师养成计划。这个计划鼓励更多的女性去学习编程甚至成为科技行业的领袖。GIA可以为大家带来很多免费编程课和组队学习：python入门教程、数据分析教程、机器学习教程等等。今后还会有更多的免费课程和活动，欢迎加入GIA！</p>
+                  </div>
+                  <div class="carousel-caption">
+                    <!-- <h3>关于GIA</h3> -->
+                    <!--<p>GirlsInAI（GIA） 是一个面向编程 零基础 的AI算法工程师养成计划。鼓励更多的女孩子去学习编程甚至成为科技行业的领袖。希望大家都能站在食物链上游看一看，因为风景真的很好。</p>-->
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Controls -->
+              <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a> -->
+          </div>          
+        </div>
+        <div class="main-part">
+
+          <div class="introduce-part marginTop20">
+            <section class="ip-left">
+              <img src="images/004.jpg"/>
+            </section>
+            <section class="ip-right">
+              <div class="title-part" style="justify-content:left;">
+                <!-- <span class="title">介绍</span> -->
+                <!--<span>这个计划为什么叫Girls-In-AI? </span>-->
+                <span style="padding:0px 0px;font-size: 28px;">CODING IS THE NEW SEXY !</span>
+              </div>
+              <div class="content" >
+                </br>
+                <p style="font-size: 28px;line-height: 40px;"><span style="font-size: 50px;">“</span>我的出发点很简单，只想做好一件事，去鼓励更多的女生去学习AI编程甚至成为科技行业的领袖。希望大家都能站在食物链上游看一看，因为风景真的很好，
+                </p>
+                </br>
+                <p>这个计划所有的课程都免费。对！免费！而且我们还有奖学金放送！如果你没钱报外面三五万的水培训班，而你恰好有时间学，欢迎你来GIA！”
+                </p>
+                </br>
+                <p>-- Words From Founder ZhangYi
+                </p>
+              </div>
+            </section>
           </div>
-          <div class="one_third">
-            <figure class="videocontainer"> 
-              <!-- Important: Any type of video called via "iframe" must be in a container using class="videocontainer" -->
-              <img src = "images/demo/profile.jpg" >
-            </figure>
+          <div class="contributor-part marginTop20">
+              <div class="title-part">
+                <!-- <span class="title">我们的贡献者</span> -->
+                <span style="font-size:30px;">AI is shaping the future. Who is shaping GIA? </span>
+              </div>
+              <div class="swiper-container" style="height:100px;width:100%;">
+                <div class="swiper-wrapper" id="contributors">
+                </div>
+                  <!-- Add Pagination -->
+                  <!-- <div class="swiper-pagination"></div> -->
+              </div>
+          </div>
+          <div class="gain-part marginTop20">
+            <div class="data-item">
+              <p>全球2300万开发者中女性程序员的比例只占</p>
+              <span>20<small>%</small></span>
+            </div>
+            <div class="data-item">
+                <p>全球高校的人工智能、机器学习课程中女学员只占</p>
+                <span>25<small>%</small></span>
+            </div>
+            <div class="data-item">
+                <p>目前GirlsInAI计划的学习参与者人数已高于</p>
+                <span>4.7<small>k</small></span>
+            </div>
+          </div>
+          <div class="course-part marginTop20">
+            <h3>我们的课程</h3>
+            <div class="course-wrap marginTop20">
+                <div class="course-item">
+                    <div class="title">
+                      <h4>小白python入门教程</h4>
+                    </div>
+                    <p>洞察数据，掌握成功决策的秘密</p>
+                    <div class="enter-wrap">
+                      <span></span><a href="http://codewithzhangyi.com/Girls-In-AI/" target="_blank">立即加入</a></span>
+                    </div>
+                </div>
+                <div class="course-item">
+                  <div class="title">
+                    <h4>数据分析教程</h4>
+                  </div>
+                  <p>洞察数据，掌握成功决策的秘密</p>
+                  <div class="enter-wrap">
+                    <span><a href="http://codewithzhangyi.com/Girls-In-AI/" target="_blank">立即加入</a></span>
+                  </div>
+                </div>
+                <div class="course-item">
+                  <div class="title">
+                    <h4>机器学习教程</h4>
+                  </div>
+                  <p>洞察数据，掌握成功决策的秘密</p>
+                  <div class="enter-wrap">
+                    <span><a href="http://codewithzhangyi.com/Girls-In-AI/" target="_blank">立即加入</a></span>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
-      </main>
-    </div>
-    
-    <!-- Course Intro -->
-
-    <div class="wrapper bgded overlay light" style="background-image:url('images/demo/backgrounds/02.jpeg');">
-      <section class="hoc container clear"> 
-        <!-- ################################################################################################ -->
-        <div class="sectiontitle">
-          <h6 class="heading">课程介绍</h6>
-        </div>
-        <ul class="nospace group">
-          <li class="one_third first btmspace-30">
-            <article><i class="btmspace-30 fa fa-3x fa-ravelry"></i>
-              <h6 class="heading"><a href="#">小白Python入门</a></h6>
-            </article>
-          </li>
-          <li class="one_third btmspace-30">
-            <article><i class="btmspace-30 fa fa-3x fa-s15"></i>
-              <h6 class="heading"><a href="#">成为数据分析师analyst</a></h6>
-              <p>Pandas, Matplotlib, Numpy [&hellip;]</p>
-            </article>
-          </li>
-          <li class="one_third btmspace-30">
-            <article><i class="btmspace-30 fa fa-3x fa-ge"></i>
-              <h6 class="heading"><a href="#">机器学习</a></h6>
-              <p>Scikit-learn [&hellip;]</p>
-            </article>
-          </li>
-          <li class="one_third first">
-            <article><i class="btmspace-30 fa fa-3x fa-gg"></i>
-              <h6 class="heading"><a href="#">深度学习</a></h6>
-              <p>coming soon [&hellip;]</p>
-            </article>
-          </li>
-          <li class="one_third">
-            <article><i class="btmspace-30 fa fa-3x fa-superpowers"></i>
-              <h6 class="heading"><a href="#">毕业项目kaggle实战</a></h6>
-            </article>
-          </li>
-          <li class="one_third">
-            <article><i class="btmspace-30 fa fa-3x fa-yelp"></i>
-              <h6 class="heading"><a href="#">自然语言处理</a></h6>
-              <p>coming soon [&hellip;]</p>
-            </article>
-          </li>
-        </ul>
-        <!-- ################################################################################################ -->
       </section>
+      <footer>
+        <span>© 2019 by GIA</span>
+        <a href="https://m.weibo.cn/profile/2650740963">微博</a>&nbsp;&nbsp;|&nbsp;
+        <a href="https://github.com/YZHANG1270/Girls-In-AI">Git</a>
+      </footer>
     </div>
-
-    <!-- data -->
-
-    <div class="wrapper row3">
-      <section class="hoc container clear"> 
-        <!-- ################################################################################################ -->
-        <div class="sectiontitle">
-          <h6 class="heading">数据展示</h6>
-        </div>
-        <div class="group latest">
-          <article class="one_third first">
-            <figure><a href="#"><img src="images/demo/001.png" alt=""></a>
-            </figure>
-            <div class="txtwrap">
-              <h4 class="heading">微博follower</h4>
-            </div>
-          </article>
-          <article class="one_third">
-            <figure><a href="#"><img src="images/demo/002.png" alt=""></a>
-            </figure>
-            <div class="txtwrap">
-              <h4 class="heading">Github Stars</h4>
-            </div>
-          </article>
-          <article class="one_third">
-            <figure><a href="#"><img src="images/demo/320x220.png" alt=""></a>
-            </figure>
-            <div class="txtwrap">
-              <h4 class="heading">作出贡献</h4>
-            </div>
-          </article>
-        </div>
-        <!-- ################################################################################################ -->
-        <div class="clear"></div>
-      </section>
+    <div class="fix-donation">
+      <a href="./pages/donation.html">赞助我吧</a>
     </div>
-
-
-    <!-- side toolbar starts here -->
-    <div id="side-bar" class="side-tool">
-      <a href="#">加<br>入<br>我<br>们</a>
-    </div>
-
-
-
-    <div class="wrapper row5">
-      <div id="copyright" class="hoc clear"> 
-        <!-- ################################################################################################ -->
-        <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-        <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-        <!-- ################################################################################################ -->
-      </div>
-    </div>
-		
-	 <!-- jQuery library -->
-    <script src="layout/scripts/jquery.min.js"></script>
-    <script src="layout/scripts/stickyNav.js"></script>
-    <script src="layout/scripts/jquery.backtotop.js"></script>
-    <script src="layout/scripts/jquery.mobilemenu.js"></script>
-    <script src="layout/scripts/jquery.fitvids.js"></script>
-
-    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      autoplay: true,
+      speed: 300,
+      pagination: {
+        el: '',
+        clickable: true,
+      },
+    });
+    </script>
+  </body>
 </html>

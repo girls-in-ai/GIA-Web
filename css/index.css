@@ -3,6 +3,13 @@
 * {
   font-size: 14px;
 }
+@font-face {
+  font-family: 'Futura Heavy';
+  src: url('../fonts/Futura-Book-2.ttf');
+}
+body {
+  font-family: 'Futura Heavy';
+}
 .marginTop10 {
   margin-top: 10px;
 }
@@ -30,9 +37,6 @@
   padding: 60px 24px;
   overflow: hidden;
 }
-#index-page .main-part .contributor-part span {
-  margin-right: 10px;
-}
 #index-page .main-part .introduce-part {
   width: 100%;
   display: flex;
@@ -47,7 +51,12 @@
   align-items: center;
 }
 #index-page .main-part .introduce-part .ip-left img {
-  width: 320px;
+  width: 430px;
+  height: 370px;
+}
+#index-page .main-part .introduce-part .ip-right p {
+  text-indent: 0;
+  font-size: 18px;
 }
 #index-page .main-part .introduce-part .content {
   width: 100%;
@@ -82,21 +91,22 @@
   font-size: 30px;
   font-weight: bold;
 }
-#index-page .main-part .course-part {
+.course-part {
   width: 100%;
   padding: 60px 24px;
 }
-#index-page .main-part .course-part h3 {
+.course-part h3 {
   text-align: center;
 }
-#index-page .main-part .course-part .course-wrap {
+.course-part .course-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
-#index-page .main-part .course-part .course-wrap .course-item {
+.course-part .course-wrap .course-item {
   width: 30%;
+  min-width: 350px;
   height: 360px;
   border-radius: 6px;
   background: #fff;
@@ -104,26 +114,26 @@
   margin: 12px;
   overflow: hidden;
 }
-#index-page .main-part .course-part .course-wrap .course-item .title {
+.course-part .course-wrap .course-item .title {
   width: 100%;
   height: 140px;
   padding: 24px;
   background: #333;
 }
-#index-page .main-part .course-part .course-wrap .course-item .title h4 {
+.course-part .course-wrap .course-item .title h4 {
   color: #fff;
   font-size: 26px;
 }
-#index-page .main-part .course-part .course-wrap .course-item p {
+.course-part .course-wrap .course-item p {
   height: 120px;
   padding: 24px;
   display: flex;
   align-items: center;
 }
-#index-page .main-part .course-part .course-wrap .course-item .enter-wrap {
+.course-part .course-wrap .course-item .enter-wrap {
   text-align: center;
 }
-#index-page .main-part .course-part .course-wrap .course-item .enter-wrap span {
+.course-part .course-wrap .course-item .enter-wrap a {
   display: inline-block;
   height: 44px;
   line-height: 44px;
@@ -134,7 +144,12 @@
   text-align: center;
   color: #fff;
   font-size: 16px;
-  cursor: pointer;
+  text-decoration: none;
+}
+.course-part .course-wrap .course-item .enter-wrap a a,
+.course-part .course-wrap .course-item .enter-wrap a a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 .nav-list {
   visibility: hidden;
@@ -175,6 +190,31 @@ footer a {
 footer a:hover {
   color: #fff;
 }
+.swiper-slide {
+  width: 100%;
+}
+.swiper-slide span {
+  display: inline-block;
+  font-size: 24px;
+}
+.fix-donation {
+  position: fixed;
+  top: 44vh;
+  right: 0;
+  z-index: 99;
+  width: 48px;
+  background: #333;
+}
+.fix-donation a {
+  display: inline-block;
+  padding: 14px;
+}
+.fix-donation a,
+.fix-donation a:hover {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+}
 /* 小屏幕（平板，大于等于 768px） */
 @media (max-width: 768px) {
   .content-detail {
@@ -198,10 +238,11 @@ footer a:hover {
   }
   .introduce-part .ip-left img,
   .introduce-part .ip-right img {
-    width: 100%;
+    width: 90% !important;
   }
   .gain-part {
     flex-direction: column;
+    padding: 80px 20vw !important;
   }
   .slider-part .slider-item {
     position: relative;
@@ -212,9 +253,6 @@ footer a:hover {
     top: 7vh;
     left: 7vh;
     color: #fff;
-  }
-  .slider-part .slider-item .top-content h3 {
-    font-size: 4rem;
   }
   .slider-part .slider-item .top-content p {
     font-size: 2rem;
